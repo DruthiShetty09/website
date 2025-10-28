@@ -4,72 +4,84 @@
   <meta charset="UTF-8">
   <title>Bio-data - Druthi Shetty</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:"Poppins",sans-serif; }
+    body { background:#f8fafc; color:#222; }
+    header {
+      background:#005f73; color:white; text-align:center; padding:20px 0;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    }
+    nav a { color:white; margin:0 10px; text-decoration:none; font-weight:500; }
+    nav a:hover { color:#94d2bd; }
+
+    .bio-container {
+      max-width:800px; margin:50px auto; background:white; padding:30px;
+      border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.1);
+    }
+    .bio-heading { text-align:center; font-size:2rem; color:#0a9396; margin-bottom:30px; }
+
+    .bio-info {
+      display:grid; grid-template-columns: 1fr 1fr;
+      gap:15px 30px; line-height:1.8;
+    }
+    .bio-info p { margin:0; }
+    .bio-label { font-weight:600; color:#005f73; }
+    .section-title {
+      margin-top:40px; font-size:1.5rem; border-bottom:2px solid #94d2bd;
+      display:inline-block; color:#0a9396; margin-bottom:10px;
+    }
+
+    table { width:100%; border-collapse:collapse; margin-top:15px; }
+    th, td { border:1px solid #ccc; padding:10px 12px; text-align:left; }
+    th { background:#e0fbfc; }
+    ul { margin-left:20px; margin-top:10px; }
+    footer { text-align:center; background:#001219; color:white; padding:15px; margin-top:40px; }
+  </style>
 </head>
 <body>
   <header>
     <h1>Druthi Shetty</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="biodata.html">Bio-data</a></li>
-      </ul>
+      <a href="index.html">Home</a> |
+      <a href="resume.html">Resume</a> |
+      <a href="biodata.html">Bio-data</a>
     </nav>
   </header>
 
   <div class="bio-container">
-    <h2>My Bio-data</h2>
+    <h2 class="bio-heading">My Bio-Data</h2>
 
-    <p><span class="bio-label">Name:</span> Druthi Shetty</p>
-    <p><span class="bio-label">Date of Birth:</span> October 9, 2004</p>
-    <p><span class="bio-label">Gender:</span> Female</p>
-    <p><span class="bio-label">Nationality:</span> Indian</p>
-    <p><span class="bio-label">Marital Status:</span> Single</p>
-    <p><span class="bio-label">Languages Known:</span> English, Hindi, Tulu, Kannada</p>
-    <p><span class="bio-label">Address:</span> Hosur, Sakleshpur Taluk, Hassan District, Karnataka, India</p>
-    <p><span class="bio-label">Contact Number:</span> 7619336755</p>
-    <p><span class="bio-label">Email:</span> shettydruthi09@gmail.com</p>
+    <div class="bio-info">
+      <p><span class="bio-label">Name:</span> Druthi Shetty</p>
+      <p><span class="bio-label">Date of Birth:</span> October 9, 2004</p>
+      <p><span class="bio-label">Gender:</span> Female</p>
+      <p><span class="bio-label">Nationality:</span> Indian</p>
+      <p><span class="bio-label">Marital Status:</span> Single</p>
+      <p><span class="bio-label">Languages Known:</span> English, Hindi, Tulu, Kannada</p>
+      <p><span class="bio-label">Address:</span> Hosur, Sakleshpur Taluk, Hassan District, Karnataka, India</p>
+      <p><span class="bio-label">Contact:</span> 7619336755</p>
+      <p><span class="bio-label">Email:</span> shettydruthi09@gmail.com</p>
+    </div>
 
     <h3 class="section-title">Educational Qualifications</h3>
     <table>
       <thead>
-        <tr>
-          <th>Year</th>
-          <th>Degree</th>
-          <th>Institution</th>
-          <th>Percentage / Grade</th>
-        </tr>
+        <tr><th>Year</th><th>Degree</th><th>Institution</th><th>Result</th></tr>
       </thead>
       <tbody>
-        <tr>
-          <td>2023 - 2027</td>
-          <td>B.E in Computer Science</td>
-          <td>AJ Institute Of Engineering And Technology</td>
-          <td>8.0 CGPA</td>
-        </tr>
-        <tr>
-          <td>2021 - 2022</td>
-          <td>Senior Secondary (12th)</td>
-          <td>Vikaas Pre-University</td>
-          <td>87%</td>
-        </tr>
-        <tr>
-          <td>2019 - 2020</td>
-          <td>Secondary (10th)</td>
-          <td>Sacred Heart English Medium School</td>
-          <td>86%</td>
-        </tr>
+        <tr><td>2023 - 2027</td><td>B.E Computer Science</td><td>AJ Institute of Engineering and Technology</td><td>8.0 CGPA</td></tr>
+        <tr><td>2021 - 2022</td><td>Senior Secondary (12th)</td><td>Vikaas Pre-University</td><td>87%</td></tr>
+        <tr><td>2019 - 2020</td><td>Secondary (10th)</td><td>Sacred Heart English Medium School</td><td>86%</td></tr>
       </tbody>
     </table>
 
     <h3 class="section-title">Skills</h3>
-    <ul class="skills-list">
+    <ul>
       <li>HTML, CSS, JavaScript</li>
       <li>React, Node.js</li>
       <li>Database Management</li>
-      <li>Problem Solving & Analytical Skills</li>
+      <li>Problem Solving and Analytical Thinking</li>
     </ul>
 
     <h3 class="section-title">Hobbies</h3>
@@ -77,7 +89,7 @@
   </div>
 
   <footer>
-    &copy; 2025 Druthi Shetty | Designed with 💙
+    &copy; 2025 Druthi Shetty - All Rights Reserved
   </footer>
 </body>
 </html>
