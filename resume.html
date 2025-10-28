@@ -4,86 +4,84 @@
   <meta charset="UTF-8">
   <title>Resume - Druthi Shetty</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:"Poppins", sans-serif; }
+    body { background:#f8fafc; color:#222; }
+    header {
+      background:#005f73; color:white; text-align:center; padding:20px 0;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    }
+    nav a { color:white; margin:0 10px; text-decoration:none; font-weight:500; }
+    nav a:hover { color:#94d2bd; }
+    main { max-width:900px; margin:40px auto; padding:20px; background:white; border-radius:10px;
+           box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+    h2 { color:#0a9396; margin-bottom:10px; border-bottom:2px solid #94d2bd; display:inline-block; padding-bottom:4px; }
+    table { width:100%; border-collapse:collapse; margin-top:10px; }
+    th, td { border:1px solid #ccc; padding:8px 12px; text-align:left; }
+    th { background:#e0fbfc; }
+    section { margin-top:30px; }
+    ul { margin-top:10px; margin-left:20px; }
+    footer { text-align:center; background:#001219; color:white; padding:15px; margin-top:40px; }
+  </style>
 </head>
 <body>
   <header>
     <h1>Druthi Shetty</h1>
     <p>Web Developer | shettydruthi09@gmail.com | 7619336755</p>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="biodata.html">Bio-data</a></li>
-      </ul>
+      <a href="index.html">Home</a> |
+      <a href="resume.html">Resume</a> |
+      <a href="biodata.html">Bio-data</a>
     </nav>
   </header>
 
   <main>
     <section id="summary">
       <h2>Professional Summary</h2>
-      <p>
-        A dedicated and enthusiastic web developer skilled in HTML, CSS, JavaScript, and React. 
-        Passionate about creating visually appealing and efficient websites.
-      </p>
+      <p>Creative and detail-oriented web developer with experience in building responsive websites and applications using HTML, CSS, JavaScript, and modern frameworks.</p>
     </section>
 
     <section id="education">
       <h2>Education</h2>
       <table>
         <thead>
-          <tr>
-            <th>Year</th>
-            <th>Degree</th>
-            <th>Institution</th>
-            <th>Result</th>
-          </tr>
+          <tr><th>Year</th><th>Degree</th><th>Institution</th><th>Result</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>2023 - 2027</td>
-            <td>B.E in Computer Science</td>
-            <td>AJ Institute Of Engineering And Technology</td>
-            <td>8.0 CGPA</td>
-          </tr>
-          <tr>
-            <td>2021 - 2022</td>
-            <td>Senior Secondary (12th)</td>
-            <td>Vikaas Pre-University</td>
-            <td>87%</td>
-          </tr>
+          <tr><td>2023 - 2027</td><td>B.E in Computer Science</td><td>AJ Institute of Engineering and Technology</td><td>8.0 CGPA</td></tr>
+          <tr><td>2021 - 2022</td><td>Senior Secondary (12th)</td><td>Vikaas Pre-University</td><td>87%</td></tr>
         </tbody>
       </table>
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
+      <h2>Work Experience</h2>
       <article>
-        <h3>Frontend Developer – WebTech Pvt Ltd</h3>
+        <h3>Frontend Developer - WebTech Pvt Ltd</h3>
         <p><em>2023 - Present</em></p>
         <ul>
-          <li>Developed and maintained responsive UI using HTML, CSS, and JavaScript.</li>
-          <li>Collaborated with backend teams to enhance user experience.</li>
+          <li>Developed user interfaces with HTML, CSS, and JavaScript ensuring responsive design.</li>
+          <li>Collaborated with backend developers and designers to improve UX.</li>
         </ul>
       </article>
 
       <article>
-        <h3>Intern – CodeZone Technologies</h3>
+        <h3>Intern - CodeZone Technologies</h3>
         <p><em>2022 (6 months)</em></p>
         <ul>
-          <li>Worked with React.js and built reusable components.</li>
-          <li>Gained experience in version control using Git.</li>
+          <li>Assisted in developing and testing web applications using React.js.</li>
+          <li>Created reusable components and optimized page performance.</li>
         </ul>
       </article>
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
       <ul>
-        <li>HTML, CSS, JavaScript, React, Node.js</li>
-        <li>Git, Figma, VS Code</li>
-        <li>Windows, Linux</li>
+        <li>Web Technologies: HTML5, CSS3, JavaScript, React, Node.js</li>
+        <li>Tools: Git, VS Code, Figma</li>
+        <li>Operating Systems: Windows, Linux</li>
       </ul>
     </section>
 
@@ -91,22 +89,17 @@
       <h2>Projects</h2>
       <article>
         <h3>Portfolio Website</h3>
-        <p>
-          Created a personal portfolio showcasing my skills and projects using HTML, CSS, and animations.
-        </p>
+        <p>Developed a responsive personal portfolio using HTML, CSS, and JavaScript.</p>
       </article>
-
       <article>
-        <h3>Task Manager App</h3>
-        <p>
-          Developed a React + Firebase-based web app for organizing and tracking daily tasks.
-        </p>
+        <h3>Task Management App</h3>
+        <p>Built a React + Firebase web app for efficient task scheduling.</p>
       </article>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Druthi Shetty | Designed with 💙
+    &copy; 2025 Druthi Shetty | All Rights Reserved
   </footer>
 </body>
 </html>
