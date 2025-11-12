@@ -4,39 +4,68 @@
   <meta charset="UTF-8">
   <title>Bio-data - Druthi Shetty</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:"Poppins",sans-serif; }
-    body { background:#f8fafc; color:#222; }
-    header {
-      background:#005f73; color:white; text-align:center; padding:20px 0;
-      box-shadow:0 2px 6px rgba(0,0,0,0.1);
-    }
-    nav a { color:white; margin:0 10px; text-decoration:none; font-weight:500; }
-    nav a:hover { color:#94d2bd; }
-
+    /* Basic styles specific to biodata page */
     .bio-container {
-      max-width:800px; margin:50px auto; background:white; padding:30px;
-      border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      color: #222;
     }
-    .bio-heading { text-align:center; font-size:2rem; color:#0a9396; margin-bottom:30px; }
-
-    .bio-info {
-      display:grid; grid-template-columns: 1fr 1fr;
-      gap:15px 30px; line-height:1.8;
+    .bio-heading {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #005f73;
     }
-    .bio-info p { margin:0; }
-    .bio-label { font-weight:600; color:#005f73; }
+    .photo-container {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .photo-container img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #0a9396;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .bio-label {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .bio-value {
+      margin-left: 10px;
+    }
     .section-title {
-      margin-top:40px; font-size:1.5rem; border-bottom:2px solid #94d2bd;
-      display:inline-block; color:#0a9396; margin-bottom:10px;
+      margin-top: 30px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #005f73;
+      padding-bottom: 5px;
+      color: #0a9396;
     }
-
-    table { width:100%; border-collapse:collapse; margin-top:15px; }
-    th, td { border:1px solid #ccc; padding:10px 12px; text-align:left; }
-    th { background:#e0fbfc; }
-    ul { margin-left:20px; margin-top:10px; }
-    footer { text-align:center; background:#001219; color:white; padding:15px; margin-top:40px; }
+    ul.skills-list {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #888;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #e0f2f1;
+    }
   </style>
 </head>
 <body>
@@ -52,36 +81,60 @@
   <div class="bio-container">
     <h2 class="bio-heading">My Bio-Data</h2>
 
-    <div class="bio-info">
-      <p><span class="bio-label">Name:</span> Druthi Shetty</p>
-      <p><span class="bio-label">Date of Birth:</span> October 9, 2004</p>
-      <p><span class="bio-label">Gender:</span> Female</p>
-      <p><span class="bio-label">Nationality:</span> Indian</p>
-      <p><span class="bio-label">Marital Status:</span> Single</p>
-      <p><span class="bio-label">Languages Known:</span> English, Hindi, Tulu, Kannada</p>
-      <p><span class="bio-label">Address:</span> Hosur, Sakleshpur Taluk, Hassan District, Karnataka, India</p>
-      <p><span class="bio-label">Contact:</span> 7619336755</p>
-      <p><span class="bio-label">Email:</span> shettydruthi09@gmail.com</p>
+    <!-- Picture section -->
+    <div class="photo-container">
+      <img src="your-photo.jpg" alt="Druthi Shetty's Photo">
+      <!-- Replace 'your-photo.jpg' with your actual image filename -->
     </div>
+
+    <p><span class="bio-label">Name:</span><span class="bio-value">Druthi Shetty</span></p>
+    <p><span class="bio-label">Date of Birth:</span><span class="bio-value">October 9, 2004</span></p>
+    <p><span class="bio-label">Gender:</span><span class="bio-value">Female</span></p>
+    <p><span class="bio-label">Nationality:</span><span class="bio-value">Indian</span></p>
+    <p><span class="bio-label">Marital Status:</span><span class="bio-value">Single</span></p>
+    <p><span class="bio-label">Languages Known:</span><span class="bio-value">English, Hindi, Tulu, Kannada</span></p>
+    <p><span class="bio-label">Address:</span><span class="bio-value">Hosur, Sakleshpur Taluk, Hassan District, Karnataka, India</span></p>
+    <p><span class="bio-label">Contact Number:</span><span class="bio-value">7619336755</span></p>
+    <p><span class="bio-label">Email:</span><span class="bio-value">shettydruhti09@gmail.com</span></p>
 
     <h3 class="section-title">Educational Qualifications</h3>
     <table>
       <thead>
-        <tr><th>Year</th><th>Degree</th><th>Institution</th><th>Result</th></tr>
+        <tr>
+          <th>Year</th>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Percentage / Grade</th>
+        </tr>
       </thead>
       <tbody>
-        <tr><td>2023 - 2027</td><td>B.E Computer Science</td><td>AJ Institute of Engineering and Technology</td><td>8.0 CGPA</td></tr>
-        <tr><td>2021 - 2022</td><td>Senior Secondary (12th)</td><td>Vikaas Pre-University</td><td>87%</td></tr>
-        <tr><td>2019 - 2020</td><td>Secondary (10th)</td><td>Sacred Heart English Medium School</td><td>86%</td></tr>
+        <tr>
+          <td>2023 - 2027</td>
+          <td>B.E Computer Science</td>
+          <td>AJ Institute Of Engineering And Technology</td>
+          <td>8.0 CGPA</td>
+        </tr>
+        <tr>
+          <td>2021 - 2022</td>
+          <td>Senior Secondary (12th)</td>
+          <td>Vikaas Pre-University</td>
+          <td>87%</td>
+        </tr>
+        <tr>
+          <td>2019 - 2020</td>
+          <td>Secondary (10th)</td>
+          <td>Sacred Heart English Medium School</td>
+          <td>86%</td>
+        </tr>
       </tbody>
     </table>
 
     <h3 class="section-title">Skills</h3>
-    <ul>
+    <ul class="skills-list">
       <li>HTML, CSS, JavaScript</li>
       <li>React, Node.js</li>
       <li>Database Management</li>
-      <li>Problem Solving and Analytical Thinking</li>
+      <li>Problem Solving and Analytical Skills</li>
     </ul>
 
     <h3 class="section-title">Hobbies</h3>
@@ -89,7 +142,7 @@
   </div>
 
   <footer>
-    &copy; 2025 Druthi Shetty - All Rights Reserved
+    <p style="text-align: center; margin-top: 40px;">&copy; 2025 Druthi Shetty - All Rights Reserved</p>
   </footer>
 </body>
 </html>
